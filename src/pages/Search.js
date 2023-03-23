@@ -36,7 +36,7 @@ const Search = () => {
     useEffect(() => {
          axios
            .get(
-             `http://openlibrary.org/subjects/${ subject ? subject : "history" }.json`
+             `http://openlibrary.org/subjects/${ subject ? subject : "love" }.json`
            )
            .then((response) => {
              setBooks(response.data.works);

@@ -27,7 +27,7 @@ const Users = () => {
   }, []);
 
   const loading = () => (
-    <Title>Users List Data is Loading...</Title>
+    <Title>Users Archive Data is Loading...</Title>
   )
   const loaded = () => {
     return users.map((user, index) => <User user={user} key={index} />);

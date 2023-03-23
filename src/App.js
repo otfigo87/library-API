@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Users from './pages/Users';
 import Search from './pages/Search';
+import Favorites from './pages/Favorites'
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/users" element={<Users />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/favorites" element={<Favorites />} />
       </Routes>
     </div>
   );

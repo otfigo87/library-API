@@ -9,7 +9,6 @@ const List = styled.li`
   padding: 0.2rem;
   /* border-left: 4px solid #625454; */
   /* border-bottom: 4px solid #625454; */
-  width: 60px;
   @media (max-width: 655px){
     margin:0;
 
@@ -32,23 +31,30 @@ const Header = () => {
         <NavLink
           to="/about"
           style={{ textDecoration: "none" }}
-          className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
+          className={(nav) => (nav.isActive ? "nav-active" : "hover")}
         >
           <List>About</List>
         </NavLink>
         <NavLink
           to="/users"
           style={{ textDecoration: "none" }}
-          className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
+          className={(nav) => (nav.isActive ? "nav-active" : "hover")}
         >
-          <List>Users</List>
+          <List>Archive</List>
         </NavLink>
         <NavLink
           to="/search"
           style={{ textDecoration: "none" }}
-          className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
+          className={(nav) => (nav.isActive ? "nav-active" : "hover")}
         >
           <List>Search</List>
+        </NavLink>
+        <NavLink
+          to="/favorites"
+          style={{ textDecoration: "none" }}
+          className={(nav) => (nav.isActive ? "nav-active" : "hover")}
+        >
+          <List>Downoalds</List>
         </NavLink>
       </ul>
     </Nav>
