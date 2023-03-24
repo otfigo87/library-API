@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import  styled  from 'styled-components';
+import Weather from './Weather';
 
 const List = styled.li`
   color: #625454;
@@ -14,7 +15,12 @@ const List = styled.li`
 
   }
 `;
-const Nav = styled.nav``;
+const Nav = styled.nav`
+display: flex;
+align-items: center;
+justify-content: space-between;
+`;
+
 
 const Header = () => {
 
@@ -57,6 +63,7 @@ const Header = () => {
           <List>Downoalds</List>
         </NavLink>
       </ul>
+      <Weather />
     </Nav>
   );
   }
